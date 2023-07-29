@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800;600&display=swap');
 
 * {
     margin: 0;
@@ -10,6 +10,10 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #FDBF3A;
     scroll-behavior: smooth;
+}
+
+p {
+    margin-bottom: 0;
 }
 
 
@@ -24,7 +28,7 @@ nav {
     background: #FFEFCE;
     height: 100vh;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 80px;
 }
 
 .home .home-title{
@@ -41,7 +45,6 @@ nav {
     width: 300px;
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 0;
     color: #A83B1A;
 }
 
@@ -50,9 +53,9 @@ nav {
 }
 
 .home-button {
-    width: 200px;
+    width: 230px;
     background-color: #A83B1A;
-    padding: 5px 8px;
+    padding: 15px 10px;
     border-radius: 10px;
 }
 
@@ -115,13 +118,16 @@ nav {
 
 .product-image {
     height: 100vh;
-    max-height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.product-image img {
+    margin: 10px 10px 0 10px;
+    border-radius: 5%;
 }
 
 
@@ -145,3 +151,116 @@ nav {
     font-weight: 800;
     color: #A83B1A;
 }
+
+
+
+.join {
+    background: #FFEFCE;
+    height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    /* border: 1px solid #A83B1A; */
+}
+
+.join h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #A83B1A;
+}
+
+.join p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #CA6949;
+}
+
+.join label {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.join button {
+    width: 200px;
+    background-color: #A83B1A;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+
+
+.gallery {
+    background: #FFEFCE;
+    height: 120vh;
+    width: 100%;
+    padding-top: 100px;
+    /* border: 1px solid #A83B1A; */
+}
+
+.gallery h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #A83B1A;
+}
+
+.gallery p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #CA6949;
+}
+
+
+
+.profit {
+    background: #FFEFCE;
+    height: 110vh;
+    width: 100%;
+    padding-top: 100px;
+    /* border: 1px solid #A83B1A; */
+}
+
+.profit h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #A83B1A;
+    letter-spacing: -3px;
+}
+
+.profit p {
+    font-size: 4.5rem;
+    font-weight: 500;
+    color: #A83B1A;
+}
+
+.contact {
+    background: #A83B1A;
+    height: 60vh;
+    width: 100%;
+    padding-top: 100px;
+    /* border: 1px solid #A83B1A; */
+}
+
+.contact h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #FDBF3A;
+}
+
+.contact-head {
+    width: 600px;
+    /* border: 1px solid #FDBF3A; */
+}
+
+.contact-instagram p, .contact-whatsapp p{
+    font-size: 1rem;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.contact-instagram h6, .contact-whatsapp h6 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
