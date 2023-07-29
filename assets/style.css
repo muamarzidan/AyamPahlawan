@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #FDBF3A;
+    scroll-behavior: smooth;
+}
+
+
+
+nav {
+    background-color: #A83B1A;
+}
+
+
+
+.home {
+    background: #FFEFCE;
+    height: 100vh;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.home .home-title{
+    margin-top: 100px;
+}
+
+.home-title h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #A83B1A;
+}
+
+.home-title p {
+    width: 300px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #A83B1A;
+}
+
+.home .home-banner {
+    margin-top: 100px;
+}
+
+.home-button {
+    width: 200px;
+    background-color: #A83B1A;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+
+.home-button a {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+.extra {
+    background: #A83B1A;
+    height: 5vh;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+.about {
+    background: #FFEFCE;
+    height: 100vh;
+    width: 100%;
+}
+
+.about-content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #A83B1A;
+}
+
+.about-icon {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+
+.product {
+    background: #FFEFCE;
+    height: auto;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.product-image {
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.mitra {
+    background: #FFEFCE;
+    height: 80vh;
+    width: 100%;
+}
+
+.mitra .mitra-title {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mitra h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #A83B1A;
+}
