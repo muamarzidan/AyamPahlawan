@@ -27,6 +27,15 @@ nav img {
     height: 40px;
 }
 
+@media screen and (max-width: 768px) {
+    .navbar-toggler {
+        color: white;
+    }
+    span {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+}
+
 
 
 .home {
@@ -37,10 +46,6 @@ nav img {
     margin-top: 80px;
 }
 
-.home .row {
-    padding-top: 100px;
-}
-
 .home-title h1 {
     font-size: 3rem;
     font-weight: 800;
@@ -49,6 +54,7 @@ nav img {
 
 .home-title p {
     width: 280px;
+    margin-top: 20px;
     font-weight: 600;
     color: #A83B1A;
 }
@@ -68,13 +74,50 @@ nav img {
     color: #ffffff;
 }
 
+@media screen and (max-width: 992px) {
+    .home-title h1 {
+        font-size: 2.5rem;
+    }
+    .home-title p {
+        width: 200px;
+        font-size: 20px !important;
+    }
+    .home-button {
+        width: 200px;
+        padding: 10px 0;
+    }
+    .home-button a {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-title h1 {
+        font-size: 2rem;
+    }
+    .home-title p {
+        width: 200px;
+        font-size: 20px !important;
+    }
+    .home-button {
+        width: 150px;
+        padding: 8px 0;
+    }
+    .home-button a {
+        font-size: 0.8rem;
+    }
+    .home img {
+        padding-top: 30px;
+    }
+}
+
 
 
 .extra {
     background: #A83B1A;
     height: 5vh;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 
@@ -82,13 +125,14 @@ nav img {
 .about {
     background: #FFEFCE;
     background-image: url('./image/PATTERN.png');
-    height: 100vh;
+    height: auto;
     width: 100%;
+    padding: 200px 0;
     /* border: 1px solid #A83B1A; */
 }
 
 .about-content {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -113,6 +157,77 @@ nav img {
     height: 80px;
 }
 
+@media screen and (max-width: 992px) {
+    .about-icon {
+        padding-top: 10px;
+    }
+    .about-icon .icon {
+        width: 150px;
+        height: 150px;
+    }
+    .icon p {
+        font-size: 0.8rem !important;
+    }
+    .about-icon img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-title h1 {
+        font-size: 3rem;
+    }
+    .about-icon {
+        padding-top: 0 !important;
+    }
+    .about-icon .icon {
+        width: 150px;
+        height: 150px;
+    }
+    .icon p {
+        font-size: 0.7rem !important;
+    }
+    .about-icon img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about {
+        padding: 100px 0;
+    }
+    .about-title h1 {
+        font-size: 2rem;
+    }
+    .about-icon {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding-top: 0 !important;
+    }
+    .about-icon .icon {
+        width: 200px;
+        height: 200px;
+        /* border: 1px solid #A83B1A; */
+    }
+    .icon p {
+        font-size: 1rem !important;
+    }
+    .about-icon img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    .about-title h1 {
+        font-size: 1.5rem;
+    }
+}
+
 
 
 .product {
@@ -135,6 +250,26 @@ nav img {
     border-radius: 5%;
 }
 
+@media screen and (max-width: 992px) {
+    .product-image img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .product-image {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .product-image img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
 
 
 .mitra {
@@ -155,6 +290,21 @@ nav img {
     color: #A83B1A;
 }
 
+@media screen and (max-width: 768px) {
+    .mitra h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .mitra {
+        height: 60vh;
+    }
+    .mitra h1 {
+        font-size: 2rem;
+    }
+}
+
 
 
 .join {
@@ -162,7 +312,6 @@ nav img {
     background-image: url('./image/PATTERN.png');
     height: 100vh;
     width: 100%;
-    padding-top: 150px;
     /* border: 1px solid #A83B1A; */
 }
 
@@ -183,6 +332,10 @@ nav img {
     font-weight: bold;
 }
 
+.join input, .join select {
+    border: none;
+}
+
 .join button {
     width: 200px;
     background-color: #A83B1A;
@@ -192,14 +345,48 @@ nav img {
     font-size: 1.2rem;
 }
 
+@media screen and (max-width: 1200px) {
+    .join h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .join h1 {
+        font-size: 3rem;
+    }
+    .join label {
+        font-size: 1.2rem;
+    }
+    .join button {
+        padding: 8px 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .join h1 {
+        font-size: 2rem;
+    }
+    .join p {
+        font-size: 0.8rem;
+    }
+    .join label {
+        font-size: 1rem;
+    }
+    .join button {
+        width: 150px;
+        padding: 7px 0px;
+        font-size: 1rem;
+    }
+}
+
 
 
 .gallery {
     background: #FFEFCE;
     background-image: url('./image/PATTERN.png');
-    height: 120vh;
+    height: auto;
     width: 100%;
-    padding-top: 100px;
     /* border: 1px solid #A83B1A; */
 }
 
@@ -220,14 +407,79 @@ nav img {
     height: 400px;
 }
 
+@media screen and (max-width: 992px) {
+    .gallery h1 {
+        font-size: 3rem;
+    }
+    .gallery #h1-two {
+        font-size: 2.5rem;
+    }
+    .gallery p {
+        font-size: 1.5rem;
+    }
+    .gallery img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery h1 {
+        font-size: 2.5rem;
+    }
+    .gallery #h1-two {
+        font-size: 2rem;
+    }
+    .gallery img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .gallery h1 {
+        font-size: 1.8rem;
+    }
+    .gallery #h1-two {
+        font-size: 1.8rem;
+    }
+    .gallery p {
+        font-size: 1rem;
+    }
+    .gallery-image {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .gallery img {
+        width: 300px;
+        height: 300px;
+        padding: 20px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .gallery h1 {
+        font-size: 1.8rem;
+    }
+    .gallery #h1-two {
+        font-size: 1.3rem;
+    }
+    .gallery p {
+        font-size: 1rem;
+    }
+}
+
 
 
 .profit {
     background: #FFEFCE;
     background-image: url('./image/PATTERN.png');
-    height: 110vh;
+    height: 100vh;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 80px;
     /* border: 1px solid #A83B1A; */
 }
 
@@ -240,7 +492,7 @@ nav img {
 
 .profit p {
     font-size: 4.5rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #A83B1A;
 }
 
@@ -249,14 +501,62 @@ nav img {
     height: 220px;
 }
 
+@media screen and (max-width: 992px) {
+    .profit {
+        padding-top: 0;
+        height: 60vh;
+    }
+    .profit h1 {
+        font-size: 3rem;
+    }
+    .profit p {
+        font-size: 3rem;
+    }
+    .profit img {
+        width: 150px;
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profit h1 {
+        font-size: 2.5rem;
+    }
+    .profit p {
+        font-size: 2.5rem;
+    }
+    .profit img {
+        width: 100px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .profit {
+        padding-top: 50px;
+        height: 60vh;
+    }
+    .profit-title {
+        padding-top: 20px;
+    }
+    .profit h1 {
+        font-size: 1.8rem;
+        letter-spacing: -1px;
+    }
+    .profit p {
+        font-size: 1.8rem;
+    }
+    .profit img {
+        width: 100px;
+        height: 120px;
+    } 
+}
 
 
 .contact {
     background: #A83B1A;
-    height: 60vh;
+    height: 50vh;
     width: 100%;
-    padding-top: 100px;
-    /* border: 1px solid #A83B1A; */
 }
 
 .contact h1 {
@@ -266,8 +566,11 @@ nav img {
 }
 
 .contact-head {
-    width: 600px;
-    /* border: 1px solid #FDBF3A; */
+    width: 580px;
+}
+
+.contact-social {
+    width: 100%;
 }
 
 .contact-instagram p, .contact-whatsapp p{
@@ -280,5 +583,64 @@ nav img {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ffffff;
+}
+
+.contact a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .contact h1 {
+        font-size: 4rem;
+    }
+    .contact-head {
+        width: 100%;
+    }
+    .contact-social {
+        width: 345px;
+    }
+    .contact-instagram p, .contact-whatsapp p{
+        font-size: 0.8rem;
+    }
+    .contact-instagram h6, .contact-whatsapp h6 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contact h1 {
+        font-size: 2.5rem;
+    }
+    .contact-head {
+        width: 100%;
+    }
+    .contact-social {
+        width: 300px;
+    }
+    .contact p {
+        font-size: 0.8rem;
+    }
+    .contact-instagram p, .contact-whatsapp p{
+        font-size: 0.8rem;
+    }
+    .contact-instagram h6, .contact-whatsapp h6 {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .contact h1 {
+        font-size: 2rem;
+    }
+    .contact-social {
+        width: 245px;
+    }
+    .contact-instagram p, .contact-whatsapp p{
+        font-size: 0.8rem;
+    }
+    .contact-instagram h6, .contact-whatsapp h6 {
+        font-size: 0.7rem;
+    }
 }
 
