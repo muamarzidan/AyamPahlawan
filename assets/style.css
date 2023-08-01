@@ -22,17 +22,23 @@ nav {
     background-color: #A83B1A;
 }
 
+nav img {
+    width: 100px;
+    height: 40px;
+}
+
 
 
 .home {
     background: #FFEFCE;
-    height: 100vh;
+    background-image: url('./image/PATTERN.png');
+    height: 85vh;
     width: 100%;
     margin-top: 80px;
 }
 
-.home .home-title{
-    margin-top: 100px;
+.home .row {
+    padding-top: 100px;
 }
 
 .home-title h1 {
@@ -42,14 +48,9 @@ nav {
 }
 
 .home-title p {
-    width: 300px;
-    font-size: 1.5rem;
+    width: 280px;
     font-weight: 600;
     color: #A83B1A;
-}
-
-.home .home-banner {
-    margin-top: 100px;
 }
 
 .home-button {
@@ -80,53 +81,57 @@ nav {
 
 .about {
     background: #FFEFCE;
+    background-image: url('./image/PATTERN.png');
     height: 100vh;
     width: 100%;
+    /* border: 1px solid #A83B1A; */
 }
 
 .about-content {
     height: 100vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .about-title h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 800;
     color: #A83B1A;
 }
 
-.about-icon {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
+.about-icon .icon {
+    width: 200px;
+    height: 200px;
+}
+
+.icon p {
+    font-weight: 800;
+    color: #A83B1A;
+}
+
+.about-icon img {
+    width: 80px;
+    height: 80px;
 }
 
 
 
 .product {
     background: #FFEFCE;
+    background-image: url('./image/PATTERN.png');   
     height: auto;
     width: 100%;
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 .product-image {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 .product-image img {
-    margin: 10px 10px 0 10px;
+    width: 300px;
+    height: 300px;
+    padding: 20px 0 0 0;
     border-radius: 5%;
 }
 
@@ -134,6 +139,7 @@ nav {
 
 .mitra {
     background: #FFEFCE;
+    background-image: url('./image/PATTERN.png');
     height: 80vh;
     width: 100%;
 }
@@ -141,9 +147,6 @@ nav {
 .mitra .mitra-title {
     height: 80vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .mitra h1 {
@@ -156,9 +159,10 @@ nav {
 
 .join {
     background: #FFEFCE;
+    background-image: url('./image/PATTERN.png');
     height: 100vh;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 150px;
     /* border: 1px solid #A83B1A; */
 }
 
@@ -192,6 +196,7 @@ nav {
 
 .gallery {
     background: #FFEFCE;
+    background-image: url('./image/PATTERN.png');
     height: 120vh;
     width: 100%;
     padding-top: 100px;
@@ -205,15 +210,21 @@ nav {
 }
 
 .gallery p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #CA6949;
+}
+
+.gallery img {
+    width: 400px;
+    height: 400px;
 }
 
 
 
 .profit {
     background: #FFEFCE;
+    background-image: url('./image/PATTERN.png');
     height: 110vh;
     width: 100%;
     padding-top: 100px;
@@ -232,6 +243,13 @@ nav {
     font-weight: 500;
     color: #A83B1A;
 }
+
+.profit img {
+    width: 200px;
+    height: 220px;
+}
+
+
 
 .contact {
     background: #A83B1A;
