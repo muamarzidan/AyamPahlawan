@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
 
 * {
     margin: 0;
@@ -26,6 +26,16 @@ nav img {
     width: 100px;
     height: 40px;
 }
+
+@media screen and (max-width: 992px) {
+    .navbar-toggler {
+        color: white;
+    }
+    span {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .navbar-toggler {
@@ -158,6 +168,9 @@ nav img {
 }
 
 @media screen and (max-width: 992px) {
+    .about {
+        padding: 100px 0;
+    }
     .about-icon {
         padding-top: 10px;
     }
@@ -251,6 +264,9 @@ nav img {
 }
 
 @media screen and (max-width: 992px) {
+    .product {
+        padding: 20px 0 50px 0;
+    }
     .product-image img {
         width: 250px;
         height: 250px;
@@ -346,6 +362,9 @@ nav img {
 }
 
 @media screen and (max-width: 1200px) {
+    .join {
+        height: 85vh;
+    }
     .join h1 {
         font-size: 4rem;
     }
@@ -437,6 +456,9 @@ nav img {
 }
 
 @media screen and (max-width: 576px) {
+    .gallery {
+        padding-top: 50px;
+    }
     .gallery h1 {
         font-size: 1.8rem;
     }
@@ -452,6 +474,7 @@ nav img {
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
+        margin-top: 1rem !important;
     }
     .gallery img {
         width: 300px;
@@ -503,7 +526,7 @@ nav img {
 
 @media screen and (max-width: 992px) {
     .profit {
-        padding-top: 0;
+        padding-top: 50px;
         height: 60vh;
     }
     .profit h1 {
@@ -534,7 +557,7 @@ nav img {
 @media screen and (max-width: 576px) {
     .profit {
         padding-top: 50px;
-        height: 60vh;
+        height: 50vh;
     }
     .profit-title {
         padding-top: 20px;
@@ -550,6 +573,13 @@ nav img {
         width: 100px;
         height: 120px;
     } 
+}
+
+@media screen and (max-width: 366px) {
+    .profit {
+        padding-top: 50px;
+        height: 60vh;
+    }
 }
 
 
