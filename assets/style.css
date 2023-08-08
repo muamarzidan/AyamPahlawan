@@ -497,6 +497,110 @@ nav img {
 
 
 
+.ruko {
+    background: #FFEFCE;
+    background-image: url('./image/PATTERN.png');
+    height: auto;
+    width: 100%;
+    padding-top: 100px;
+    /* border: 1px solid #A83B1A; */
+}
+
+.ruko h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #A83B1A;
+}
+
+.ruko p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #CA6949;
+}
+
+.ruko img {
+    width: 530px;
+    height: 400px;
+}
+
+@media screen and (max-width: 1200px) {
+    .ruko img {
+        width: 430px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .ruko h1 {
+        font-size: 3rem;
+    }
+    .ruko #h1-two {
+        font-size: 2.5rem;
+    }
+    .ruko p {
+        font-size: 1.5rem;
+    }
+    .ruko img {
+        width: 320px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ruko h1 {
+        font-size: 2.5rem;
+    }
+    .ruko #h1-two {
+        font-size: 2rem;
+    }
+    .ruko img {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .ruko {
+        padding-top: 50px;
+    }
+    .ruko h1 {
+        font-size: 1.8rem;
+    }
+    .ruko #h1-two {
+        font-size: 1.8rem;
+    }
+    .ruko p {
+        font-size: 1rem;
+    }
+    .ruko-image {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-top: 1rem !important;
+    }
+    .ruko img {
+        width: 400px;
+        height: 300px;
+        padding: 20px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .ruko h1 {
+        font-size: 1.8rem;
+    }
+    .ruko #h1-two {
+        font-size: 1.3rem;
+    }
+    .ruko p {
+        font-size: 1rem;
+    }
+}
+
+
+
 .profit {
     background: #FFEFCE;
     background-image: url('./image/PATTERN.png');
