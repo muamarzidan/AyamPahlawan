@@ -27,3 +27,21 @@ function updateIconSizeMain() {
 }
 window.addEventListener("DOMContentLoaded", updateIconSizeMain);
 window.addEventListener("resize", updateIconSizeMain);
+
+function kirimPesan() {
+    var nama = document.getElementById("nama").value;
+    var nomor = document.getElementById("nomor").value;
+    var email = document.getElementById("email").value;
+    var dana = document.getElementById("dana").value;
+
+    if (nama === '' || nomor === '' || email === '' || dana === '') {
+        alert('Harap isi semua input sebelum mengirim pesan ke WhatsApp.');
+        return;
+    }
+
+    var pesan = "Halo, nama saya " + nama + ", saya ingin mencoba bekerja sama menjadi mitra ayam goreng pahlawan, berikut profile lengkap saya.\nNama: " + nama + "\nNomor: " + nomor + "\nEmail: " + email + "\nDana: Rp " + dana + "\nTerima kasih.";
+
+    var url = "https://wa.me/+6287832793243?text=" + encodeURIComponent(pesan);
+    window.open(url, '_blank');
+}
+
