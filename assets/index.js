@@ -41,7 +41,7 @@ function kirimPesan() {
 
     var pesan = "Halo, nama saya " + nama + ", saya ingin mencoba bekerja sama menjadi mitra ayam goreng pahlawan, berikut profile lengkap saya.\nNama: " + nama + "\nNomor: " + nomor + "\nEmail: " + email + "\nDana: Rp " + dana + "\nTerima kasih.";
 
-    var url = "https://wa.me/+6287832793243?text=" + encodeURIComponent(pesan);
+    var url = "https://wa.me/+6287737310888?text=" + encodeURIComponent(pesan);
     window.open(url, '_blank');
 }
 
